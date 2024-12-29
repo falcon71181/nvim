@@ -32,6 +32,7 @@ return {
     lspconfig.rust_analyzer.setup({
       capabilities = capabilities,
       -- Server-specific settings. See `:help lspconfig-setup`
+      filetypes = { "rust" },
       settings = {
         ["rust-analyzer"] = {},
       },
