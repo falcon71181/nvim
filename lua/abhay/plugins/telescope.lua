@@ -43,7 +43,7 @@ return {
           use_delta = true,
           side_by_side = false,
           vim_diff_opts = { ctxlen = 0 },
-          entry_format = "state #$ID, $STAT, $TIME",
+          entry_format = "v #$ID, $STAT, $TIME",
           time_format = "",
           mappings = {
             i = {
