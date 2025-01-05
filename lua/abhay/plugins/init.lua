@@ -15,4 +15,8 @@ return {
   {
     "folke/zen-mode.nvim",
   },
+  -- Vim min , maximizer
+  {
+    "szw/vim-maximizer",
+  },
 }
