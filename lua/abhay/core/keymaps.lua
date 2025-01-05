@@ -106,3 +106,5 @@ keymap.set("n", "<leader>ggS", "<cmd>Telescope git_status<cr>", { desc = "Go to 
 keymap.set("n", "<leader>ggt", "<cmd>Telescope treesitter<cr>", { desc = "Go to treesitter" })
 
 keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope" })
+
+keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<cr>", { desc = "Maximize/minimize a split" })
