@@ -88,7 +88,7 @@ keymap.set("n", "<leader>sf", "<cmd>Telescope git_files<cr>", { desc = "Find git
 keymap.set(
   "n",
   "<leader>sa",
-  "<cmd>Telescope find_files hidden=true<cr>",
+  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>",
   { desc = "Find files including hidden files" }
 )
 keymap.set("n", "<leader>sr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
