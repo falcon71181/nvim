@@ -61,10 +61,10 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 
 -- Map Shift+Tab to unindent
-keymap.set({ "n", "v" }, "<S-Tab>", "<cmd>normal! << <CR>")
+keymap.set({ "n", "v" }, "<S-Tab>", "<cmd>normal! << <CR>gv")
 
 -- Map Tab to indent
-keymap.set({ "n", "v" }, "<Tab>", "<cmd>normal! >> <CR>")
+keymap.set({ "n", "v" }, "<Tab>", "<cmd>normal! >> <CR>gv")
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
