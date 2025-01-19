@@ -33,6 +33,7 @@ vim.o.autoindent = false
 vim.bo.autoindent = false
 vim.o.expandtab = true -- Use spaces instead of tabs
 vim.bo.expandtab = true
+vim.o.smarttab = true -- Enable smart tabbing
 -- vim.opt.backspace = "2"
 -- vim.opt.showcmd = true
 -- vim.opt.laststatus = 2
