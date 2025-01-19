@@ -60,6 +60,14 @@ local keymap = vim.keymap -- for conciseness
 
 ---------------------
 
+-- Map Shift+Tab to unindent
+keymap.api.nvim_set_keymap("i", "<S-Tab>", "<C-D>", { noremap = true })
+keymap.api.nvim_set_keymap("v", "<S-Tab>", "<C-D>", { noremap = true })
+
+-- Map Tab to indent
+keymap.api.nvim_set_keymap("i", "<Tab>", "<C-T>", { noremap = true })
+keymap.api.nvim_set_keymap("v", "<Tab>", "<C-T>", { noremap = true })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
