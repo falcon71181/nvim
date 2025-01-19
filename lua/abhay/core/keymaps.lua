@@ -23,12 +23,12 @@ vim.o.conceallevel = 0 -- For markdown like elements
 -- Tabs and indentations
 vim.o.tabstop = 2 -- Number of spaces a tab character represents
 vim.bo.tabstop = 2
-vim.o.showtabline = 0
+vim.o.showtabline = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2 -- Number of spaces to use for each indentation level
 vim.bo.shiftwidth = 2
-vim.o.smartindent = false
-vim.bo.smartindent = false
+vim.o.smartindent = true
+vim.bo.smartindent = true
 vim.o.autoindent = false
 vim.bo.autoindent = false
 vim.o.expandtab = true -- Use spaces instead of tabs
