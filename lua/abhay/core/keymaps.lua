@@ -21,7 +21,7 @@ vim.o.cmdheight = 1 -- Max items to show in command menu
 vim.o.conceallevel = 0 -- For markdown like elements
 
 -- Tabs and indentations
-vim.o.tabstop = 2
+vim.o.tabstop = 2 -- Number of spaces a tab character represents
 vim.bo.tabstop = 2
 vim.o.showtabline = 0
 vim.o.softtabstop = 2
