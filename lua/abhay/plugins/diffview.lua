@@ -95,10 +95,10 @@ return {
         view = {
           -- The `view` bindings are active in the diff buffers, only when the current
           -- tabpage is a Diffview.
-          { "n", "<tab>", actions.select_next_entry, { desc = "Open the diff for the next file" } },
+          { "n", "<leader>ggd", actions.select_next_entry, { desc = "Open the diff for the next file" } },
           {
             "n",
-            "<s-tab>",
+            "<leader>ggD",
             actions.select_prev_entry,
             { desc = "Open the diff for the previous file" },
           },
