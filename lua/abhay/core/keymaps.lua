@@ -112,7 +112,7 @@ keymap.set("n", "<leader>ggs", "<cmd>Telescope git_stash<cr>", { desc = "Go to g
 keymap.set("n", "<leader>ggS", "<cmd>Telescope git_status<cr>", { desc = "Go to git status" })
 keymap.set("n", "<leader>ggt", "<cmd>Telescope treesitter<cr>", { desc = "Go to treesitter" })
 
-keymap.set("n", "<leader>ggh", "<cmd>Telescope git_commits<cr>", { desc = "Go to git commits" })
+keymap.set("n", "<leader>ggh", "<cmd>DiffviewFileHistory<cr>", { desc = "Go to git commits" })
 
 keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope" })
 
