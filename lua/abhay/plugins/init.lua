@@ -23,4 +23,8 @@ return {
   {
     "mg979/vim-visual-multi",
   },
+  {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    build = "make",
+  },
 }
