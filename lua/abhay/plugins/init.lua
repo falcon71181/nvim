@@ -19,4 +19,8 @@ return {
   {
     "szw/vim-maximizer",
   },
+  -- Multiple cursors plugin
+  {
+    "mg979/vim-visual-multi",
+  },
 }
