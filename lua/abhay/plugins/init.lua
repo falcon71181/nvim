@@ -23,7 +23,7 @@ return {
   {
     "mg979/vim-visual-multi",
   },
-  --  Delete/change/add parentheses/quotes/XML-tags/much more with ease
+  -- Delete/change/add parentheses/quotes/XML-tags/much more with ease
   {
     "tpope/vim-surround",
   },
