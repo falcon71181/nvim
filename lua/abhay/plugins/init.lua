@@ -19,4 +19,8 @@ return {
   {
     "szw/vim-maximizer",
   },
+  -- Git Gutter
+  {
+    "airblade/vim-gitgutter",
+  },
 }
