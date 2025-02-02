@@ -23,9 +23,4 @@ return {
   {
     "mg979/vim-visual-multi",
   },
-  -- telescope fuzzy finder
-  {
-    "nvim-telescope/telescope-fzf-native.nvim",
-    build = "make",
-  },
 }
