@@ -26,7 +26,7 @@ return {
             mirror = true,
           },
           vertical = {
-            preview_height = 0.35,
+            preview_height = 0.45,
             mirror = true,
           },
         },
