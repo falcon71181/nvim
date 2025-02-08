@@ -103,7 +103,8 @@ keymap.set("n", "<leader>su", "<cmd>Telescope undo<cr>", { desc = "Find undo his
 keymap.set("n", "<leader>gdd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Go to definitions" })
 keymap.set("n", "<leader>gdi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Go to implementations" })
 keymap.set("n", "<leader>gdr", "<cmd>Telescope lsp_references<cr>", { desc = "Go to references" })
-keymap.set("n", "<leader>gdD", "<cmd>Telescope diagnostics<cr>", { desc = "Go to diagnostics" })
+keymap.set("n", "<leader>gdD", "<cmd>Telescope diagnostics severity=error<cr>", { desc = "Go to diagnostics" })
+keymap.set("n", "<leader>gDD", "<cmd>Telescope diagnostics<cr>", { desc = "Go to diagnostics" })
 keymap.set("n", "<leader>gdt", "<cmd>Telescope treesitter<cr>", { desc = "Go to treesitter" })
 
 keymap.set("n", "<leader>ggc", "<cmd>Telescope git_commits<cr>", { desc = "Go to git commits" })
