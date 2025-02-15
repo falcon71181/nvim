@@ -121,7 +121,7 @@ keymap.set("n", "<leader>ggt", "<cmd>Telescope treesitter<cr>", { desc = "Go to 
 
 keymap.set("n", "<leader>ggo", "<cmd>DiffviewOpen<cr>", { desc = "Go to git commits" })
 keymap.set("n", "<leader>ggh", "<cmd>DiffviewFileHistory<cr>", { desc = "Go to git commits" })
-keymap.set("n", "<leader>gD", "<cmd>DiffviewClose<cr>", { desc = "Go to git commits" })
+keymap.set("n", "<leader>ggD", "<cmd>DiffviewClose<cr>", { desc = "Go to git commits" })
 
 keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope" })
 
