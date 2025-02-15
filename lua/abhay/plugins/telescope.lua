@@ -39,7 +39,12 @@ return {
         },
       },
       extensions = {
-        fzf = {},
+        fzf = {
+          fuzzy = true, -- Enable fuzzy matching
+          override_generic_sorter = true, -- Override the generic sorter
+          override_file_sorter = true, -- Override the file sorter
+          case_mode = "smart_case", -- Set a valid case mode (important!)
+        },
         undo = {
           use_delta = true,
           side_by_side = false,
