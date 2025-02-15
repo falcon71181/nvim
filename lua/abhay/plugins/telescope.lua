@@ -8,6 +8,7 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
     "tpope/vim-obsession",
     "dhruvasagar/vim-prosession",
+    "cljoly/telescope-repo.nvim",
   },
   config = function()
     local telescope = require("telescope")
@@ -57,6 +58,7 @@ return {
     })
 
     telescope.load_extension("fzf")
+    telescope.load_extension("repo")
     telescope.load_extension("undo")
     telescope.load_extension("media_files")
     telescope.load_extension("prosession")
