@@ -28,7 +28,7 @@ return {
     priority = 1000,
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme catppuccin-frappe]])
+      vim.cmd([[colorscheme catppuccin-mocha]])
       vim.cmd("hi LineNr guifg=white ctermfg=white") -- Set color for the current line number
       vim.cmd("hi LineNrAbove guifg=red ctermfg=red") -- Set color for the line number above
       vim.cmd("hi LineNrBelow guifg=green ctermfg=green") -- Set color for the line number below
