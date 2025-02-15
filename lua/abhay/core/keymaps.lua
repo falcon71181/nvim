@@ -85,14 +85,13 @@ keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", "<cmd>%y+<CR>")
 keymap.set("n", "Y", [["+Y]])
 
-keymap.set("n", "<leader>sF", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
-keymap.set("n", "<leader>sf", "<cmd>Telescope git_files<cr>", { desc = "Find git files in cwd" })
-keymap.set(
-  "n",
-  "<leader>sa",
-  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>",
-  { desc = "Find files including hidden files" }
-)
+keymap.set("n", "<leader>sa", function()
+  require("telescope.builtin").find_files({ cwd = vim.fn.getcwd(), hidden = true })
+end, { desc = "Find files in project root (including hidden)" })
+keymap.set("n", "<leader>sf", function()
+  require("telescope.builtin").find_files({ cwd = vim.fn.getcwd() })
+end, { desc = "Find files in project root (including hidden)" })
+keymap.set("n", "<leader>sF", "<cmd>Telescope git_files<cr>", { desc = "Find git files in cwd" })
 keymap.set("n", "<leader>sr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
 keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>sb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
