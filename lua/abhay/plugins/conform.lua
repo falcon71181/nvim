@@ -10,11 +10,14 @@ return {
       json = { "prettierd" },
       jsonc = { "prettierd" },
       yaml = { "prettierd" },
-      typescript = { "prettierd" },
-      typescriptreact = { "prettierd" },
+      -- typescript = { "prettierd" },
+      typescript = {},
+      -- typescriptreact = { "prettierd" },
+      typescriptreact = {},
       html = { "prettierd" },
       ejs = { "prettierd" },
-      css = { "prettierd" },
+      css = {},
+      -- css = { "prettierd" },
       scss = { "prettierd" },
       graphql = { "prettierd" },
       markdown = { "prettierd" },
@@ -26,7 +29,7 @@ return {
     },
     format_on_save = function(bufnr)
       -- Disable autoformat on certain filetypes
-      local ignore_filetypes = { "java" }
+      local ignore_filetypes = { "java", "typescript", "typescriptreact", "css" }
       if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
         return
       end

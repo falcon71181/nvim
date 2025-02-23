@@ -60,11 +60,13 @@ local keymap = vim.keymap -- for conciseness
 
 ---------------------
 
--- Map Shift+Tab to unindent
-keymap.set({ "n", "v" }, "<S-Tab>", "<cmd>normal! << <CR>gv")
+-- Map Shift+Tab to unindent in visual mode and normal mode
+vim.keymap.set("n", "<S-Tab>", "<<")
+vim.keymap.set("v", "<S-Tab>", "<gv")
 
--- Map Tab to indent
-keymap.set({ "n", "v" }, "<Tab>", "<cmd>normal! >> <CR>gv")
+-- Map Tab to indent in visual mode and normal mode
+vim.keymap.set("n", "<Tab>", ">>")
+vim.keymap.set("v", "<Tab>", ">gv")
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
@@ -83,35 +85,8 @@ keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", "<cmd>%y+<CR>")
 keymap.set("n", "Y", [["+Y]])
 
-keymap.set("n", "<leader>sF", "<cmd>Telescope find_files<cr>", { desc = "Find files in cwd" })
-keymap.set("n", "<leader>sf", "<cmd>Telescope git_files<cr>", { desc = "Find git files in cwd" })
-keymap.set(
-  "n",
-  "<leader>sa",
-  "<cmd>Telescope find_files follow=true no_ignore=true hidden=true<cr>",
-  { desc = "Find files including hidden files" }
-)
-keymap.set("n", "<leader>sr", "<cmd>Telescope oldfiles<cr>", { desc = "Find recent files" })
-keymap.set("n", "<leader>sg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
-keymap.set("n", "<leader>sb", "<cmd>Telescope buffers<cr>", { desc = "Find buffers" })
-keymap.set("n", "<leader>sc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
-keymap.set("n", "<leader>sC", "<cmd>Telescope colorscheme<cr>", { desc = "List colorschemes" })
-keymap.set("n", "<leader>ss", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Find symbols in the file" })
-keymap.set("n", "<leader>sp", "<cmd>Telescope prosession<cr>", { desc = "Find sessions" })
-keymap.set("n", "<leader>su", "<cmd>Telescope undo<cr>", { desc = "Find undo history" })
-
-keymap.set("n", "<leader>gdd", "<cmd>Telescope lsp_definitions<cr>", { desc = "Go to definitions" })
-keymap.set("n", "<leader>gdi", "<cmd>Telescope lsp_implementations<cr>", { desc = "Go to implementations" })
-keymap.set("n", "<leader>gdr", "<cmd>Telescope lsp_references<cr>", { desc = "Go to references" })
-keymap.set("n", "<leader>gdD", "<cmd>Telescope diagnostics<cr>", { desc = "Go to diagnostics" })
-keymap.set("n", "<leader>gdt", "<cmd>Telescope treesitter<cr>", { desc = "Go to treesitter" })
-
-keymap.set("n", "<leader>ggc", "<cmd>Telescope git_commits<cr>", { desc = "Go to git commits" })
-keymap.set("n", "<leader>ggb", "<cmd>Telescope git_branches<cr>", { desc = "Go to git branches" })
-keymap.set("n", "<leader>ggs", "<cmd>Telescope git_stash<cr>", { desc = "Go to git stash" })
-keymap.set("n", "<leader>ggS", "<cmd>Telescope git_status<cr>", { desc = "Go to git status" })
-keymap.set("n", "<leader>ggt", "<cmd>Telescope treesitter<cr>", { desc = "Go to treesitter" })
-
-keymap.set("n", "<leader>st", "<cmd>TodoTelescope<cr>", { desc = "Todo Telescope" })
+keymap.set("n", "<leader>ggo", "<cmd>DiffviewOpen<cr>", { desc = "Go to git commits" })
+keymap.set("n", "<leader>ggh", "<cmd>DiffviewFileHistory<cr>", { desc = "Go to git commits" })
+keymap.set("n", "<leader>ggD", "<cmd>DiffviewClose<cr>", { desc = "Go to git commits" })
 
 keymap.set("n", "<leader>sm", "<cmd>MaximizerToggle<cr>", { desc = "Maximize/minimize a split" })

@@ -12,12 +12,23 @@ return {
   --     vim.cmd("hi LineNrBelow guifg=green ctermfg=green")
   --   end,
   -- },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   priority = 1000,
+  --   config = function()
+  --     -- load the colorscheme here
+  --     vim.cmd([[colorscheme tokyonight-moon]])
+  --     vim.cmd("hi LineNr guifg=white ctermfg=white") -- Set color for the current line number
+  --     vim.cmd("hi LineNrAbove guifg=red ctermfg=red") -- Set color for the line number above
+  --     vim.cmd("hi LineNrBelow guifg=green ctermfg=green") -- Set color for the line number below
+  --   end,
+  -- },
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
     priority = 1000,
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight-moon]])
+      vim.cmd([[colorscheme catppuccin-mocha]])
       vim.cmd("hi LineNr guifg=white ctermfg=white") -- Set color for the current line number
       vim.cmd("hi LineNrAbove guifg=red ctermfg=red") -- Set color for the line number above
       vim.cmd("hi LineNrBelow guifg=green ctermfg=green") -- Set color for the line number below

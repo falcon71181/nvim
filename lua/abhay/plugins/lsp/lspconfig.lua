@@ -40,6 +40,20 @@ return {
     -- Java LS
     lspconfig.jdtls.setup({
       capabilities = capabilities,
+      filetypes = { "java" },
+      settings = {
+        java = {
+          configuration = {
+            runtimes = {
+              {
+                name = "JavaSE-21",
+                path = "/Users/abhaythakur/Library/Java/JavaVirtualMachines/openjdk-23.0.1",
+                default = true,
+              },
+            },
+          },
+        },
+      },
     })
 
     -- html
