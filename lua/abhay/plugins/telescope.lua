@@ -124,6 +124,7 @@ return {
       builtin.grep_string({
         cwd = proj_dir,
         file_ignore_patterns = {
+          "bundle.js", -- To ignore massive bundle js file
           "node_modules/",
           "target/",
           ".git/",
