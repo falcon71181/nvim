@@ -78,6 +78,7 @@ return {
           cwd = proj_dir,
           hidden = hidden, -- Include hidden files (only affects find_files)
           file_ignore_patterns = {
+            "bundle.js", -- To ignore massive bundle js file
             "node_modules/",
             "target/",
             ".git/",
@@ -124,6 +125,7 @@ return {
       builtin.grep_string({
         cwd = proj_dir,
         file_ignore_patterns = {
+          "bundle.js", -- To ignore massive bundle js file
           "node_modules/",
           "target/",
           ".git/",
